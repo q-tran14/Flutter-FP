@@ -1,10 +1,10 @@
 name: quizlet_clone
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.2.5 <4.0.0'
+  sdk: ">=3.2.5 <4.0.0"
 
 dependencies:
   flutter:
@@ -13,7 +13,31 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
   flutter_lints: ^2.0.0
+
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  ###
+  # If edit in flutter_laucher_icons, run these command in terminal or cmd (In root project dicrectory):
+  # > flutter pub run flutter_launcher_icons
+  ###
+  android: true
+  ios: true
+  image_path: assets/images/logo.png
+  min_sdk_android: 18
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: assets/images/logo.png
+  windows:
+    generate: true
+    image_path: assets/images/win_logo.png
+    icon_size: 48         # min:48, max:256, default: 48
+  macos:        # uncheck
+    generate: true
+    image_path: assets/images/logo.png
 
 flutter:
   uses-material-design: true
@@ -21,4 +45,4 @@ flutter:
   fonts:
     - family: Helvetica-Neue
       fonts:
-        - asset: assets/fonts/HelveticaNeueBold.ttf
+        - asset: assets/fonts/Choose/HelveticaNeueBold.ttf
