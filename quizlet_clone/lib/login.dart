@@ -58,29 +58,43 @@ class _LoginState extends State<Login> {
           ),
           AnimatedPositioned(
             duration: const Duration(milliseconds: 1200),
-            top: opened ? 500 : 235,         // Close: 235 - 500
+            top: opened ? 680 : 235,         // Close: 235 - 500
             left: -350,
             child: const Image(image: AssetImage('assets/images/decorItem1.png'),),
           ),
-          AnimatedPositioned(
-            top: btnUp ? 620 : 900,       // begin: 800 - end: 620
+          AnimatedPositioned(     //! Unfinish
+            top: btnUp ? 600 : 900,       // begin: 800 - end: 620
             height: 50,
             width: 300,
             duration: const Duration(milliseconds: 1200),
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50),
+                  borderRadius: BorderRadius.circular(20),
                 ),
                 minimumSize: const Size.fromHeight(55),
-                backgroundColor: Color(0xFFC1DADF),
+                backgroundColor: Color(0xFF142850),
                 shadowColor: Colors.black,
                 elevation: 10
               ),
               onPressed: (){
-                print('Hi');
+                print('Sign In');
               },
-              child: Text('Sign In',style: TextStyle(fontSize: 28, color: Color(0xFF142850))),
+              child: Text('Sign In',style: TextStyle(fontSize: 28, color: Color(0xFFFFFFFF))),
+            ),
+          ),
+          AnimatedPositioned(
+            top: 710,
+            
+            duration: Duration (milliseconds: 1200),
+            child: TextButton(
+              style: TextButton.styleFrom(
+
+              ),
+              onPressed: (){
+                print('Forget password');
+              },
+              child: Text('Forget password', style: TextStyle(fontSize: 16, color: Color(0xFF142850)),),
             ),
           ),
         ],     
