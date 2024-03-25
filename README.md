@@ -6,3 +6,4 @@ Run this command in cmd or terminal (current directory is the project root direc
 > flutter pub get
 
 Or another option is click button "Down straight arrow on a line" - Get packages, on the top right next to "Run code" button
+test
