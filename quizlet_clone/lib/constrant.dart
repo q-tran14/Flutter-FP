@@ -10,7 +10,6 @@ const quizlet = Text('Quizlet',style: TextStyle(fontSize: 48, color: Color(0xFF1
 const logoPath = 'assets/images/logo.png';
 const logan = Text('Empower Your Vocabulary with Flashcards!',style: TextStyle(fontSize: 14));
 
-
 // Future runSplashScreen() async {
 //   await Future.delayed(const Duration(milliseconds: 1000));
 //   setState(() {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_framework.dart';
+//import 'package:responsive_framework/responsive_framework.dart';
 import 'pages/splash_screen.dart';
 import 'constrant.dart';
 
@@ -12,11 +12,12 @@ class QuizletApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     String platform = Theme.of(context).platform.toString();
     print(platform + '(h - w): ' + height.toString() + ' - ' + width.toString());
-    
+
     return MaterialApp(
       // builder: (context, child) => ResponsiveBreakpoints.builder(
       //   child: child!,
